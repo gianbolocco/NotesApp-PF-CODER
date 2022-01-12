@@ -1,0 +1,125 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #292c2e;
+}
+
+nav{
+    position: fixed;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #1d2022c4;
+    
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+}
+
+#tasks{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-card{
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+
+    .card-title{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .card-description{
+        font-family: 'Roboto', sans-serif;
+        margin: 20px 0px 30px 0px;
+    }
+
+    .remove{
+        height: 50px;
+        cursor: pointer;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50); 
+    }
+}
+
+
+#nuevaNota{
+    cursor: pointer;
+    position:fixed;
+    height: 100px;
+    width: 100px;
+    bottom: 25px;
+    right:50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+}
+
+#deleteAll{
+    position:fixed;
+    bottom: 150px;
+    right: 50px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);  
+}
+
+.filtrar{
+    position: fixed;
+    background-color: #1d2022c4;
+    right: 50px;
+    top: 150px;
+    border-radius: 10px;
+
+
+    #filtros{
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        padding: 10px;
+        background-color: #181b1d;
+        border-radius: 5px;
+    }
+    .slide{
+        display: none,;
+        .filtros{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+
+            .color{
+                width: 40px;
+                height: 40px;
+                margin: 10px 0px 10px 0px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+
+
+@import "modales";
+@import "clases"

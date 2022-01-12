@@ -1,0 +1,197 @@
+/* modales */
+
+#modal-delete{
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+    .contenido-modal{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        border-radius: 10px;
+        background-color: #292c2e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh;
+        width: 65vh;
+
+        button{
+            margin-bottom: 0%;
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 2rem;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+// ==
+
+#modal-deleteAll{
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+    .contenido-modal{
+        position: absolute;
+        top: 20%;
+        left: 27%;
+        border-radius: 10px;
+        background-color: #292c2e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh;
+        width: 80vh;
+
+        span{
+            color: tomato;
+        }
+        img{
+            width: 50%;
+            margin: 25px;
+        }
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 2rem;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+/* == */
+#container{
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0; 
+
+    form{
+        position: absolute;
+        top: 10%;
+        left: 28%;
+        background-color: #292c2e;
+        width: 80vh;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+
+        #title{
+            font-size: 1.5em;
+            background-color: #3e4246;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        #title::placeholder { color: rgb(190, 190, 190); font-weight: bold; font-family: 'Roboto', sans-serif;}
+
+        #description{
+            font-size: 1.1em;
+            background-color: #3e4246;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        #description::placeholder { color: rgb(190, 190, 190); font-weight: bold; font-family: 'Roboto', sans-serif;}
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .colores{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        height: 100px;
+
+        
+
+        .color{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* == */
+
+#modal-gp{
+    
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+
+    #contenido-modal-gp{
+        position: absolute;
+        top: 10%;
+        left: 28%;
+        background-color: #292c2e;
+        width: 80vh;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 1.6rem;
+        }
+
+        video{
+            height: 300px;
+            width: 300px;
+        }
+    }
+}

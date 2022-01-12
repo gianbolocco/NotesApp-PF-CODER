@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Javsascript Task App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+
+    <nav>
+      <a class="navbar-brand" href="#">NotesApp</a>
+    </nav>
+
+  <!-- Notas -->
+    <div id="tasks"></div>
+
+    <!-- crear y deleteAll-->
+    <img src="sources/plus.png" id="nuevaNota" alt="crear una nueva nota">
+    <img id="deleteAll" src="sources/delete.png" alt="borrar todas las notas">
+
+    <!-- Modales -->
+
+    
+    <div class="filtrar">
+      <a id="filtros">Filtrar</a>
+      <div class="slide">
+        <div class="filtros">
+          <a class="color amarillo" id="filtro-amarillo"></a> 
+          <a class="color rojo" id="filtro-rojo"></a>
+          <a class="color azul" id="filtro-azul"></a>
+          <a class="color verde" id="filtro-verde"></a>
+          <img src="sources/rueda-colores.svg" class="color" id="rueda-colores" alt="">
+        </div>
+      </div>
+
+    </div>
+    
+<!-- === -->
+      <div id="container">
+
+        <form id="formTask">
+
+          <input type="text" id="title" placeholder="Titulo" class="form-control" maxlength="50">
+          <textarea id="description" cols="30" rows="10" placeholder="Crear una nota..." maxlength="180"></textarea>
+          <p>Colores:</p>
+          <div class="colores">
+            <a class="color amarillo" id="amarillo" onclick="setColor('amarillo')"></a>
+            <a class="color rojo" id="rojo" onclick="setColor('rojo')"></a>
+            <a class="color verde" id="verde" onclick="setColor('verde')"></a>
+            <a class="color azul" id="azul" onclick="setColor('azul')"></a>
+          </div>
+          <input type="hidden" id="color">
+
+          <div>
+            <button type="submit" class="crear" id="crear">Crear</button>
+            <a id="cancelar-crear" class="cancelar">Cancelar</a>
+          </div>
+
+
+        </form>
+      
+      </div>
+      <!-- === -->
+      <div id="modal-deleteAll">
+
+        <div class="contenido-modal">
+
+            <p>¿Seguro que quieres borrar <span>todas</span> las Notas?</p>
+
+          <div>
+            <button id="aceptar-deleteAll" class="crear">Aceptar</button>
+            <button id="cancelar-deleteAll" class="cancelar">Cancelar</button>
+          </div>
+          
+          
+        </div>
+        
+      </div>
+
+
+      <!-- === -->
+
+
+      <div id="modal-delete">
+
+        <div class="contenido-modal">    
+          
+            <p>¿Seguro que quieres borrar la nota?</p>
+
+          <div>
+            <button id="aceptar" class="crear">Aceptar</button>
+            <button id="cancelar" class="cancelar">Cancelar</button>
+          </div>
+          
+          
+        </div>
+        
+      </div>
+
+      <!-- === -->
+
+      <div id="modal-gp">
+
+        <div id="contenido-modal-gp">
+
+          <p>Nota creada con exito</p>
+          <video id="gif" autoplay="true" loop="true"></video>
+          <button id="cerrar-modal-gp" class="crear" onclick="location.reload()">OK</button>
+        
+        </div>
+        
+    </div>
+
+    <!-- Fin Modales -->
+
+    <script src="giphy.js"></script>
+    <script src="funciones.js"></script>
+    <script src="eventos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

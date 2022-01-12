@@ -1,0 +1,53 @@
+.crear{
+    background-color: dodgerblue;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1em;
+    padding: 20px;
+    margin: 30px 30px 20px 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.crear:hover{
+    background-color: rgb(24, 115, 207);
+}
+
+.cancelar{
+    background-color: tomato;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 20px;
+    margin: 30px 30px 20px 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.cancelar:hover{
+    background-color: rgb(175, 66, 47);
+}
+
+input, button, textarea{
+    margin: 10px 0px 10px 0px;
+    background: none;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    
+}
+
+.amarillo{
+    background-color: #FFFF99;
+}
+.verde{
+    background-color: #A6C198
+}
+.azul{
+    background-color: #6CBFD0;
+}
+.rojo{
+    background-color: #F28A8A;
+}
